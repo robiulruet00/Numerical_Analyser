@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context="com.example.robiul.numericalanalysis.Bisection">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of data to be put"
+        android:gravity="center"
+        android:id="@+id/NBtextview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NBeditText"
+        android:layout_below="@+id/NBtextview"
+        android:layout_alignLeft="@+id/NBtextview"
+        android:layout_alignStart="@+id/NBtextview"
+        android:layout_alignRight="@+id/NBtextview"
+        android:layout_alignEnd="@+id/NBtextview" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter the values in form x,y(using comma(,)) "
+        android:id="@+id/NBtextview2"
+        android:layout_below="@+id/NBeditText"
+        android:layout_alignLeft="@+id/NBeditText"
+        android:layout_alignStart="@+id/NBeditText"
+        android:layout_alignRight="@+id/NBeditText"
+        android:layout_alignEnd="@+id/NBeditText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_below="@+id/NBtextview2"
+        android:layout_alignLeft="@+id/NBtextview2"
+        android:layout_alignStart="@+id/NBtextview2"
+        android:layout_alignRight="@+id/NBtextview2"
+        android:layout_alignEnd="@+id/NBtextview2"
+        android:weightSum="100">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:id="@+id/NBeditText2"
+            android:digits="1234567890,-1-2-3-4-5-6-7-8-9."
+            android:inputType="text"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buttontextColor"
+            android:background="@color/buttonColor"
+            android:id="@+id/xy"
+            android:layout_weight="10"
+            android:text="next"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NBtextview3"
+        android:text="Enter the value of X to find Y"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/linear"
+        android:layout_alignLeft="@+id/NBtextview2"
+        android:layout_alignStart="@+id/NBtextview2"
+        android:layout_alignRight="@+id/NBtextview2"
+        android:layout_alignEnd="@+id/NBtextview2"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NBeditText3"
+        android:digits="1234567890,-1-2-3-4-5-6-7-8-9"
+        android:inputType="text"
+        android:layout_below="@+id/NBtextview3"
+        android:layout_alignLeft="@+id/NBtextview3"
+        android:layout_alignStart="@+id/NBtextview3"
+        android:layout_alignRight="@+id/NBtextview3"
+        android:layout_alignEnd="@+id/NBtextview3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here for Result"
+        android:textColor="@color/buttontextColor"
+        android:background="@color/buttonColor"
+        android:id="@+id/NBbutton"
+        android:layout_below="@+id/NBeditText3"
+        android:layout_alignLeft="@+id/NBtextview2"
+        android:layout_alignStart="@+id/NBtextview2"
+        android:layout_alignRight="@+id/NBtextview2"
+        android:layout_alignEnd="@+id/NBtextview2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:visibility="gone"
+        android:id="@+id/NBtextview4"
+        android:layout_below="@+id/NBbutton"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/NBbutton"
+        android:layout_alignEnd="@+id/NBbutton"
+        android:layout_alignLeft="@+id/NBbutton"
+        android:layout_alignStart="@+id/NBbutton" />
+
+
+</RelativeLayout>
+

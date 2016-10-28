@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bisection"
+            android:icon="@drawable/one"
+            android:title="Bisection Method" />
+        <item
+            android:id="@+id/false_position"
+            android:icon="@drawable/two"
+            android:title="False Position" />
+        <item
+            android:id="@+id/iteration"
+            android:icon="@drawable/three"
+            android:title="Iteration Method" />
+        <item
+            android:id="@+id/newton_raphson"
+            android:icon="@drawable/four"
+            android:title="Newton-Raphson" />
+        <item
+            android:id="@+id/ramanujan"
+            android:icon="@drawable/five"
+            android:title="Newton's Forward Interpolation" />
+        <item
+            android:id="@+id/newton_backward"
+            android:icon="@drawable/six"
+            android:title="Newton's Backward Interpolation" />
+        <item
+            android:id="@+id/gauss_central"
+            android:icon="@drawable/seven"
+            android:title="Gauss Central" />
+
+
+        <item
+            android:id="@+id/trapezoidal"
+            android:icon="@drawable/eight"
+            android:title="Trapezoidal Rule" />
+        <item
+            android:id="@+id/simpson_1_3"
+            android:icon="@drawable/nine"
+            android:title="Simpson 1/3 Rule" />
+
+    </group>
+</menu>

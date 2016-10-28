@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context="com.example.robiul.numericalanalysis.Bisection">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of data to be put"
+        android:gravity="center"
+        android:id="@+id/Rtextview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReditText"
+        android:layout_below="@+id/Rtextview"
+        android:layout_alignLeft="@+id/Rtextview"
+        android:layout_alignStart="@+id/Rtextview"
+        android:layout_alignRight="@+id/Rtextview"
+        android:layout_alignEnd="@+id/Rtextview" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter the values in form x,y(using comma(,)) "
+            android:id="@+id/Rtextview2"
+            android:layout_below="@+id/ReditText"
+            android:layout_alignLeft="@+id/ReditText"
+            android:layout_alignStart="@+id/ReditText"
+            android:layout_alignRight="@+id/ReditText"
+            android:layout_alignEnd="@+id/ReditText" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linear"
+    android:layout_below="@+id/Rtextview2"
+    android:layout_alignLeft="@+id/Rtextview2"
+    android:layout_alignStart="@+id/Rtextview2"
+    android:layout_alignRight="@+id/Rtextview2"
+    android:layout_alignEnd="@+id/Rtextview2"
+    android:weightSum="100">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:id="@+id/ReditText2"
+        android:digits="1234567890,-1-2-3-4-5-6-7-8-9"
+        android:inputType="text"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/buttontextColor"
+        android:background="@color/buttonColor"
+        android:id="@+id/xy"
+        android:layout_weight="10"
+        android:text="next"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rtextview3"
+        android:text="Enter the value of X to find Y"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/linear"
+        android:layout_alignLeft="@+id/Rtextview2"
+        android:layout_alignStart="@+id/Rtextview2"
+        android:layout_alignRight="@+id/Rtextview2"
+        android:layout_alignEnd="@+id/Rtextview2"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReditText3"
+        android:digits="1234567890,-1-2-3-4-5-6-7-8-9"
+        android:inputType="text"
+        android:layout_below="@+id/Rtextview3"
+        android:layout_alignLeft="@+id/Rtextview2"
+        android:layout_alignStart="@+id/Rtextview2"
+        android:layout_alignRight="@+id/Rtextview2"
+        android:layout_alignEnd="@+id/Rtextview2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here for Result"
+        android:textColor="@color/buttontextColor"
+        android:background="@color/buttonColor"
+        android:id="@+id/Rbutton"
+        android:layout_below="@+id/ReditText3"
+        android:layout_alignLeft="@+id/Rtextview2"
+        android:layout_alignStart="@+id/Rtextview2"
+        android:layout_alignRight="@+id/Rtextview2"
+        android:layout_alignEnd="@+id/Rtextview2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:visibility="gone"
+        android:id="@+id/Rtextview4"
+        android:layout_below="@+id/Rbutton"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/Rbutton"
+        android:layout_alignEnd="@+id/Rbutton"
+        android:layout_alignLeft="@+id/Rbutton"
+        android:layout_alignStart="@+id/Rbutton" />
+
+</RelativeLayout>

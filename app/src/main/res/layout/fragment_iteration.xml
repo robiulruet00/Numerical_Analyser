@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context="com.example.robiul.numericalanalysis.Bisection">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter your Highest Degree"
+        android:gravity="center"
+        android:id="@+id/Itextview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IeditText"
+        android:digits="123456"
+        android:inputType="text"
+        android:layout_below="@+id/Itextview"
+        android:layout_alignLeft="@+id/Itextview"
+        android:layout_alignStart="@+id/Itextview"
+        android:layout_alignRight="@+id/Itextview"
+        android:layout_alignEnd="@+id/Itextview" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter The Co-efficient of degree(using comma(,)) "
+            android:id="@+id/Itextview2"
+            android:layout_below="@+id/IeditText"
+            android:layout_alignLeft="@+id/IeditText"
+            android:layout_alignStart="@+id/IeditText"
+            android:layout_alignRight="@+id/IeditText"
+            android:layout_alignEnd="@+id/IeditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IeditText2"
+        android:digits="1234567890,-1-2-3-4-5-6-7-8-9"
+        android:inputType="text"
+        android:layout_below="@+id/Itextview2"
+        android:layout_alignLeft="@+id/Itextview2"
+        android:layout_alignStart="@+id/Itextview2"
+        android:layout_alignRight="@+id/Itextview2"
+        android:layout_alignEnd="@+id/Itextview2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Itextview3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter your initial guess"
+        android:layout_below="@id/IeditText2"
+        android:layout_alignLeft="@+id/IeditText2"
+        android:layout_alignStart="@+id/IeditText2"
+        android:layout_alignRight="@+id/IeditText2"
+        android:layout_alignEnd="@+id/IeditText2" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IeditText3"
+        android:layout_below="@id/Itextview3"
+        android:layout_alignLeft="@+id/Itextview3"
+        android:layout_alignStart="@+id/Itextview3"
+        android:layout_alignRight="@+id/Itextview3"
+        android:layout_alignEnd="@+id/Itextview3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here for Result"
+        android:textColor="@color/buttontextColor"
+        android:background="@color/buttonColor"
+        android:id="@+id/Ibutton"
+        android:layout_below="@+id/IeditText3"
+        android:layout_alignLeft="@+id/IeditText2"
+        android:layout_alignStart="@+id/IeditText2"
+        android:layout_alignRight="@+id/IeditText2"
+        android:layout_alignEnd="@+id/IeditText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:visibility="gone"
+        android:id="@+id/Itextview4"
+        android:layout_below="@+id/Ibutton"
+        android:layout_marginTop="52dp"
+        android:layout_alignRight="@+id/Ibutton"
+        android:layout_alignEnd="@+id/Ibutton"
+        android:layout_alignLeft="@+id/Ibutton"
+        android:layout_alignStart="@+id/Ibutton" />
+
+</RelativeLayout>

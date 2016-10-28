@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context="com.example.robiul.numericalanalysis.Bisection">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of data to be put"
+        android:gravity="center"
+        android:id="@+id/Gtextview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeditText"
+        android:layout_below="@+id/Gtextview"
+        android:layout_alignLeft="@+id/Gtextview"
+        android:layout_alignStart="@+id/Gtextview"
+        android:layout_alignRight="@+id/Gtextview"
+        android:layout_alignEnd="@+id/Gtextview" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter the values in form x,y(using comma(,)) "
+        android:id="@+id/Gtextview2"
+        android:layout_below="@+id/GeditText"
+        android:layout_alignLeft="@+id/GeditText"
+        android:layout_alignStart="@+id/GeditText"
+        android:layout_alignRight="@+id/GeditText"
+        android:layout_alignEnd="@+id/GeditText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_below="@+id/Gtextview2"
+        android:layout_alignLeft="@+id/Gtextview2"
+        android:layout_alignStart="@+id/Gtextview2"
+        android:layout_alignRight="@+id/Gtextview2"
+        android:layout_alignEnd="@+id/Gtextview2"
+        android:weightSum="100">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:id="@+id/GeditText2"
+            android:digits="1234567890,-1-2-3-4-5-6-7-8-9."
+            android:inputType="text"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buttontextColor"
+            android:background="@color/buttonColor"
+            android:id="@+id/xy"
+            android:layout_weight="10"
+            android:text="next"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Gtextview3"
+        android:text="Enter the value of X to find Y"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/linear"
+        android:layout_alignLeft="@+id/Gtextview2"
+        android:layout_alignStart="@+id/Gtextview2"
+        android:layout_alignRight="@+id/Gtextview2"
+        android:layout_alignEnd="@+id/Gtextview2"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeditText3"
+        android:digits="1234567890,-1-2-3-4-5-6-7-8-9."
+        android:inputType="text"
+        android:layout_below="@+id/Gtextview3"
+        android:layout_alignLeft="@+id/Gtextview3"
+        android:layout_alignStart="@+id/Gtextview3"
+        android:layout_alignRight="@+id/Gtextview3"
+        android:layout_alignEnd="@+id/Gtextview3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here for Result"
+        android:textColor="@color/buttontextColor"
+        android:background="@color/buttonColor"
+        android:id="@+id/Gbutton"
+        android:layout_below="@+id/GeditText3"
+        android:layout_alignLeft="@+id/Gtextview2"
+        android:layout_alignStart="@+id/Gtextview2"
+        android:layout_alignRight="@+id/Gtextview2"
+        android:layout_alignEnd="@+id/Gtextview2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:visibility="gone"
+        android:id="@+id/Gtextview4"
+        android:layout_below="@+id/Gbutton"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/Gbutton"
+        android:layout_alignEnd="@+id/Gbutton"
+        android:layout_alignLeft="@+id/Gbutton"
+        android:layout_alignStart="@+id/Gbutton" />
+
+
+</RelativeLayout>
+
